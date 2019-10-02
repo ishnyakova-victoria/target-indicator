@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Target Indicator Demo</title>
+	<link rel="stylesheet" href="css/all.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="title">
+			<h1>Target Indicator Demo</h1>
+		</div>
+		<div class="target-indicator">
+			<div class="container">
+				<div class="row">
+					<p>Reached:</p>
+					<div class="scale">
+						<div class="indicator">
+							<input type="range" min="0" max="15" value="0" class="range">
+							<div class="current-value">
+								<p><i class="fas fa-caret-up"></i><br>$<span class="value">0</span></p>
+							</div>
+						</div>
+						<div class="target">
+							<p>Target<br><span>$15</span></p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="icon">
+						<img src="img/info.png" alt="">
+					</div>
+					<p class="info">You need $1 more to reach your target.</p> 
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/main.js"></script>
+</body>
+</html>

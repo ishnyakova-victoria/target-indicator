@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap');
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
+	line-height: 1.2;
+}
+
+h1, p {
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	width: 350px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: 1px solid #676767;
+	border-radius: 7px;
+	box-shadow: 0 0 5px rgba(0,0,0,0.7);
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.title {
+	width: 100%;
+	padding: 7px 13px 6px;
+	background-color: #4A4949;
+	border-bottom: 1px solid #403F3F;
+	box-sizing: border-box;
+}
+
+.title h1 {
+	color: #fff;
+	font-size: 13px;
+	font-weight: 700;
+}
+
+.target-indicator {
+	width: 100%;
+	padding: 12px;
+	background-color: #F2F2F2;
+	box-sizing: border-box;
+}
+
+.container {
+	width: 100%;
+	padding: 9px 35px;
+	border: 1px solid #D8D6D6;
+	border-radius: 5px;
+	background-color: #fff;
+	box-sizing: border-box;
+}
+
+.row {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+
+.row:first-child {
+	justify-content: space-between;
+	margin-bottom: 16px;
+}
+
+.row:last-child {
+	justify-content: center;
+}
+
+.row:first-child > p {
+	margin-left: 7px;
+}
+
+.row p {
+	color: #676767;
+	font-size: 13px;
+	font-weight: 400;
+}
+
+.row:first-child p {
+	font-weight: 700;
+}
+
+.row i {
+	font-size: 15px;
+}
+
+.scale {
+	display: flex;
+	align-items: center;
+}
+
+.indicator {
+	width: 120px;
+	background-color: #CDCFCC;
+	padding: 3px;
+	box-shadow: inset 0 0 2px #CECECE;
+	box-sizing: border-box;
+}
+
+.current-indicator {
+	width: calc(100% / 15 * 14);
+	height: 7px;
+	position: relative;
+	background-color: #0489D1;
+	box-shadow: inset 0 0 2px #0083D1;
+	box-sizing: border-box;
+}
+
+.current-value {
+	line-height: 0.8;
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	transform: translate(40%, 110%);
+}
+
+.target {
+	width: 50px;
+	border: 1px solid #D8D6D6;
+	border-radius: 3px;
+	background: linear-gradient(#A59FA0, #706F73);
+	padding-bottom: 2px;
+	box-sizing: border-box;
+}
+
+.row .target p {
+	color: #fff;
+	font-family: "PT Sans", sans-serif;
+	font-weight: 400;
+}
+
+.row .target span {
+	color: #fff;
+	font-family: "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
+	font-size: 17px;
+	font-weight: 400;
+}
+
+.row .target span::before {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(90deg, rgba(126,125,127,0) 0%, rgba(126,125,127,1) 50%, rgba(126,125,127,0) 100%) center top no-repeat,
+				linear-gradient(90deg, rgba(213,211,211,0) 0%, rgba(213,211,211,1) 50%, rgba(213,211,211,0) 100%) center bottom no-repeat;
+	background-size: 100% 1px, 100% 1px;
+	margin-bottom: 2px;
+}
+
+.icon {
+	width: 16px;
+	height: 16px;
+	margin-right: 5px;
+	border-radius: 50%;
+	background: linear-gradient(#6593AF, #417290);
+	position: relative;
+}
+
+.icon img {
+	width: 13px;
+	height: 13px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
